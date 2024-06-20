@@ -8,4 +8,4 @@ death <- selectHMDdata("Japan", "Deaths", "Females",
 exposure <- selectHMDdata("Japan", "Exposures", "Females",
                           ages = 80, years = years)
 fitBIC <- Mort1Dsmooth(x=years, y=death,
-                       offset=log(exposure))
+                          offset=log(exposure))
